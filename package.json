@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "gitbook serve ./content",
-    "build": "gitbook build ./content ./pages",
+    "build": "gitbook build ./content ./gh-pages",
     "deploy": "node ./scripts/deploy-gh-pages.js",
-    "publish":"npm run build&&npm run deploy"
+    "publish": "npm run build&&npm run deploy"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/superce/js-note/issues"
   },
-  "homepage": "https://github.com/superce/js-note#readme"
+  "homepage": "https://github.com/superce/js-note#readme",
+  "dependencies": {
+    "gh-pages": "^1.0.0"
+  }
 }
